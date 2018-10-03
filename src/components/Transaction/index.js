@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export default ({ transaction }) => {
     return <div>
-        Hash: <Link to={`/transaction/${transaction.hash}`}>{transaction.hash}</Link><br />
+        Hash: <Link to={`/transaction/${transaction.hash}`}>{transaction.hash}</Link><br /><br />
         Inputs:
         <ul>
             {transaction.inputs.map((input, index) =>
